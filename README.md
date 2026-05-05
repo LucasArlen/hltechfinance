@@ -75,15 +75,6 @@ pyinstaller hl_finance.spec --distpath HLBuild8dist --workpath HLBuild8build --n
 # Gerar instalador (Inno Setup detecta os caminhos automaticamente pelo installer.iss)
 "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" installer.iss
 ```
-
-## 🔄 Migração do Mercatta App
-
-Se você usava o Mercatta App anteriormente, o HL Tech Finance detecta automaticamente o banco de dados antigo e migra os dados na primeira execução. Também é possível rodar manualmente:
-
-```bash
-python scripts/migrate_from_mercatta.py "Nome da Loja"
-```
-
 ## 💾 Backup
 
 - **Automático ao abrir**: uma vez por dia
